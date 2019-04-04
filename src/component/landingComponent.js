@@ -10,8 +10,6 @@ import antd from "antd";
 //from app
 class LandingComponent extends Component {
 	render() {
-		  const BackgroundImage ='https://genobank.io/wp-content/uploads/2018/01/cloud-image3-plava.png';
-        const BackgroundImageMain ='https://genobank.io/wp-content/uploads/2016/10/it_graph-1.jpg';
 		return (
 			<div style={{fontSize: 17}}>
                 <div className="wrapper">
@@ -20,7 +18,7 @@ class LandingComponent extends Component {
                        }}>
                         <div>
                             <div className="leftSide">
-                                <img src="https://genobank.io/wp-content/uploads/2019/02/gbbeta-logo.png"/>
+                                <img style={{ height: 30 }} src="https://genobank.io/wp-content/uploads/2019/02/gbbeta-logo.png"/>
                                 <h2>First Anonymous DNA Saliva Kit with Blockchain.</h2>
                                 <p>Contribute to Personalized Medicine and all the new Genomic discoveries with
                                     confidence
