@@ -12,6 +12,7 @@ import routes from '../src/route/route';
 //import styles here
 //import '../src/style/css/antd.css';
 import '../src/style/css/app.css';
+import '../src/style/css/landing.css';
 //import js files
 //import "../src/style/js/antd.js";
 

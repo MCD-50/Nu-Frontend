@@ -20,7 +20,7 @@ class HeaderPartialComponent extends Component {
 			<div className="header-container">
 				<div className="header-container-center">
 					<div style={{ display: 'flex', flex: 1 }}>
-						<span>Genobank <sub>ALPHA</sub></span>
+						<a onClick={() => this.props.history.push(`/`)}><img src="https://genobank.io/wp-content/uploads/2019/02/gbbeta-logo.png" /></a>
 					</div>
 
 					<div>
