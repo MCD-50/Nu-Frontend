@@ -23,6 +23,7 @@ class AccountComponent extends Component {
 			publicKey: "",
 			privateKey: "",
 			visible: false,
+			loading: false
 		}
 
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,11 +35,8 @@ class AccountComponent extends Component {
 		this.props.form.validateFields((err, values) => {
 			if (!err) {
 				const filter = { email: values.email, password: values.password };
-
-				if (!collection.validateEmail(filter.email)) {
-					return collection.showMessage("Invalid Email.", "error");
-				}
-
+				
+				this.setState({ loading: true })
 				this.props.appAction.createAccount(filter, this.handleResponse);
 			}
 		});
@@ -46,6 +44,7 @@ class AccountComponent extends Component {
 
 
 	handleResponse(result) {
+		this.setState({ loading: false, })
 		if (result.error) {
 			collection.showMessage(result.error && result.error.errors && result.error.errors.length > 0 && result.error.errors[0] || "Something went wrong", "error")
 		} else if (result.value) {
@@ -94,6 +93,11 @@ class AccountComponent extends Component {
 
 
 							<antd.Divider style={{ marginTop: 20, marginBottom: 20 }} />
+
+							<div style={{ textAlign: "center" }}>
+								{ this.state.loading && !this.state.visible && <antd.Button shape="circle" loading /> }
+							</div>
+
 
 							{
 								this.state.visible && (

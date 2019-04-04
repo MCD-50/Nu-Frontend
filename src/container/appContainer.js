@@ -11,6 +11,7 @@ import { withRouter } from 'react-router-dom';
 import * as appAction from '../store/action/appAction';
 
 import HeaderPartialComponent from '../partialComponent/headerPartialComponent';
+import FooterPartialComponent from '../partialComponent/footerPartialComponent';
 
 const propTypes = {
 	children: PropTypes.object.isRequired,
@@ -27,7 +28,7 @@ class AppContainer extends Component {
 
 	getHeight() {
 		let windowHeight = window.innerHeight;
-		windowHeight = windowHeight - 0 // remove the footer height if any
+		windowHeight = windowHeight - 285 // remove the footer height if any
 		return windowHeight;
 	}
 
@@ -38,6 +39,7 @@ class AppContainer extends Component {
 				<div style={{ minHeight: this.getHeight(), paddingTop: 56, background: "#fafafa", paddingBottom: 32 }}>
 					{this.props.children}
 				</div>
+				<FooterPartialComponent {...this.props} />
 			</div>
 		);
 	}

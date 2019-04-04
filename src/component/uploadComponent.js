@@ -21,6 +21,7 @@ class UploadComponent extends Component {
 		this.state = {
 			capsuleId: "",
 			visible: false,
+			loading: false
 		}
 
 		this.file = null;
@@ -36,24 +37,24 @@ class UploadComponent extends Component {
 		this.props.form.validateFields((err, values) => {
 			if (!err) {
 				let filter = { walletAddress: values.walletAddress, password: values.password, detail: values.detail, file: this.file };
-				console.log(filter)
+				this.setState({ loading: true })
 				this.props.appAction.createUpload(filter, this.handleResponse);
 			}
 		});
 	}
 
 	handleResponse(result) {
+		this.setState({ loading: false })
 		if (result.error) {
 			collection.showMessage(result.error && result.error.errors && result.error.errors.length > 0 && result.error.errors[0] || "Something went wrong", "error")
 		} else if (result.value) {
-			this.setState({ visible: true, capsuleId: result.value.capsuleId });
+			this.setState({ visible: true, capsuleId: result.value.capsuleId, transactionHash: result.value.transactionHash });
 		}
 	}
 
 
 	beforeUpload(file) {
 		this.file = file;
-		console.log(this.file);
 	}
 
 
@@ -110,15 +111,18 @@ class UploadComponent extends Component {
 							</antd.Form>
 
 
-
 							<antd.Divider style={{ marginTop: 20, marginBottom: 20 }} />
+
+							<div style={{ textAlign: "center" }}>
+								{ this.state.loading && !this.state.visible && <antd.Button shape="circle" loading /> }
+							</div>
 
 							{
 								this.state.visible && (
 									<div>
 										<antd.Timeline>
 											<antd.Timeline.Item>Capsule Id : <b>{this.state.capsuleId}</b></antd.Timeline.Item>
-
+											<antd.Timeline.Item>Tx Hash : <b>{this.state.transactionHash}</b></antd.Timeline.Item>
 										</antd.Timeline>
 
 									</div>

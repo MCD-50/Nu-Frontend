@@ -78,12 +78,8 @@ class GrantHistoryComponent extends Component {
 
 		return (
 			<div style={{ maxWidth: 1200, margin: "0 auto" }}>
-				<div style={{ display: "flex", flex: 1, flexDirection: "row", marginBottom: 15, textAlign: "center" }}>
-					<p style={{ fontSize: 30 }}>Grants</p>
-				</div>
-
-				<div style={{ flex: 1 }}>
-					<antd.Card>
+				<div style={{ flex: 1, marginTop: 20 }}>
+					<antd.Card title={"GRANTS"}>
 						<antd.Table
 							size="small"
 							dataSource={data}

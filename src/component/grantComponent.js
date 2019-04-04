@@ -17,6 +17,9 @@ const propTypes = {
 class GrantComponent extends Component {
 	constructor(params) {
 		super(params);
+		this.state = {
+			loading: false
+		}
 
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleResponse = this.handleResponse.bind(this);
@@ -27,12 +30,14 @@ class GrantComponent extends Component {
 		this.props.form.validateFields((err, values) => {
 			if (!err) {
 				const filter = { walletAddress: values.walletAddress, password: values.password, capsuleId: values.capsuleId };
+				this.setState({ loading: true });
 				this.props.appAction.createGrant(filter, this.handleResponse);
 			}
 		});
 	}
 
 	handleResponse(result) {
+		this.setState({ loading: false });
 		if (result.error) {
 			collection.showMessage(result.error && result.error.errors && result.error.errors.length > 0 && result.error.errors[0] || "Something went wrong", "error")
 		} else if (result.value) {
@@ -87,6 +92,12 @@ class GrantComponent extends Component {
 								</antd.Form.Item>
 
 							</antd.Form>
+
+							<antd.Divider style={{ marginTop: 20, marginBottom: 20 }} />
+
+							<div style={{ textAlign: "center" }}>
+								{this.state.loading && <antd.Button shape="circle" loading />}
+							</div>
 						</div>
 					</antd.Card>
 				</div>
