@@ -53,7 +53,7 @@ class GrantHistoryComponent extends Component {
 	}
 
 	getGrantColumns() {
-		return ["accountAddress", "email", "capsuleId", "count"].map(key => {
+		return ["accountAddress", "capsuleId", "count"].map(key => {
 			return {
 				title: key,
 				dataIndex: key,
