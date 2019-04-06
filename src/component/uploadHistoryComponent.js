@@ -56,15 +56,15 @@ class UploadHistoryComponent extends Component {
 	}
 
 	getUploadColumns() {
-		let columns=["accountAddress", "detail", "capsuleId", "transactionHash"].map(key => {
+		let columns = ["accountAddress", "detail", "capsuleId", "transactionHash"].map(key => {
 			return {
 				title: key == "capsuleId" ? "salivaId" : key,
 				dataIndex: key,
 				key: key,
-				render: (text, record) => <p>{text} </p>
+				render: (text, record) => key == "transactionHash" ? <a target="_blank" href={`http://35.200.190.101:10003/#/transaction/${text}`}>{text}</a> : <p>{text} </p>
 			};
 		});
-	return columns;
+		return columns;
 
 	}
 
@@ -74,15 +74,14 @@ class UploadHistoryComponent extends Component {
 		});
 	}
 
-	handleQrCodeOk (e) {
+	handleQrCodeOk(e) {
 		console.log(e);
 		this.setState({
 			visibleQrcodeModel: false,
 		});
 	}
 
-	handleQrCodeCancel (e){
-		console.log(e);
+	handleQrCodeCancel(e) {
 		this.setState({
 			visibleQrcodeModel: false,
 		});
@@ -111,9 +110,8 @@ class UploadHistoryComponent extends Component {
 							loading={loading}
 							columns={columns}
 							expandedRowRender={record => <p style={{ margin: 0 }}><h2>Request access by scanning Qr code </h2>
-															<QRCode value={window.location.href+'/request/'+record.capsuleId} />
-								<p><antd.Button style={{ marginTop: 10 }} onClick={() => this.props.history.push('/request/'+record.capsuleId)}>Request access</antd.Button></p>
-
+								<QRCode value={record.capsuleId} />
+								<p><antd.Button style={{ marginTop: 10 }} onClick={() => this.props.history.push('/request/' + record.capsuleId)}>Request access</antd.Button></p>
 							</p>}
 						/>
 					</antd.Card>

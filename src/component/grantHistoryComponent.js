@@ -58,7 +58,7 @@ class GrantHistoryComponent extends Component {
 				title: key == "capsuleId" ? "salivaId" : key,
 				dataIndex: key,
 				key: key,
-				render: (text, record) => <p>{text} </p>
+				render: (text, record) => key == "transactionHash" ? <a target="_blank" href={`http://35.200.190.101:10003/#/transaction/${text}`}>{text}</a> : <p>{text} </p>
 			};
 		});
 	}
