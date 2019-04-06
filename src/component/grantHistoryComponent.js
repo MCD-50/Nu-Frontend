@@ -55,7 +55,7 @@ class GrantHistoryComponent extends Component {
 	getGrantColumns() {
 		return ["accountAddress", "capsuleId", "count"].map(key => {
 			return {
-				title: key,
+				title: key == "capsuleId" ? "salivaId" : key,
 				dataIndex: key,
 				key: key,
 				render: (text, record) => <p>{text} </p>

@@ -55,7 +55,7 @@ class UploadHistoryComponent extends Component {
 	getUploadColumns() {
 		return ["accountAddress", "detail", "capsuleId", "transactionHash",].map(key => {
 			return {
-				title: key,
+				title: key == "capsuleId" ? "salivaId" : key,
 				dataIndex: key,
 				key: key,
 				render: (text, record) => <p>{text} </p>

@@ -82,7 +82,7 @@ class GrantComponent extends Component {
 											initialValue: "",
 											rules: [{ required: true, message: 'Please input document capsule id' }],
 										})(
-											<antd.Input prefix={""} placeholder="Capsule Id" />
+											<antd.Input prefix={""} placeholder="Saliva Id" />
 										)}
 									</antd.Form.Item>
 								</div>

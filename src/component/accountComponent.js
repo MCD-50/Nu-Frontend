@@ -34,8 +34,11 @@ class AccountComponent extends Component {
 		e.preventDefault();
 		this.props.form.validateFields((err, values) => {
 			if (!err) {
+				if (values.password != values.confirmPassword) {
+					return collection.showMessage("Password must match", "error")
+				}
 				const filter = { email: values.email, password: values.password };
-				
+
 				this.setState({ loading: true })
 				this.props.appAction.createAccount(filter, this.handleResponse);
 			}
@@ -73,16 +76,23 @@ class AccountComponent extends Component {
 									)}
 								</antd.Form.Item>
 
-								<div style={{ display: "flex", flex: 1, flexDirection: "column", width: 350 }}>
-									<antd.Form.Item style={{ width: 350 }}>
-										{getFieldDecorator('password', {
-											initialValue: "",
-											rules: [{ required: true, min: 8, max: 25, message: 'Please input your valid password' }],
-										})(
-											<antd.Input prefix={""} type={"password"} placeholder="Password" />
-										)}
-									</antd.Form.Item>
-								</div>
+								<antd.Form.Item style={{ width: 350 }}>
+									{getFieldDecorator('password', {
+										initialValue: "",
+										rules: [{ required: true, min: 8, max: 25, message: 'Please input your valid password' }],
+									})(
+										<antd.Input prefix={""} type={"password"} placeholder="Password" />
+									)}
+								</antd.Form.Item>
+
+								<antd.Form.Item style={{ width: 350 }}>
+									{getFieldDecorator('confirmPassword', {
+										initialValue: "",
+										rules: [{ required: true, min: 8, max: 25, message: 'Please input your valid password' }],
+									})(
+										<antd.Input prefix={""} type={"password"} placeholder="Confirm Password" />
+									)}
+								</antd.Form.Item>
 
 								<antd.Form.Item style={{ width: 350 }}>
 									<antd.Button type="primary" style={{ width: 350 }} htmlType="submit" className="login-form-button"> Continue </antd.Button>
@@ -95,9 +105,8 @@ class AccountComponent extends Component {
 							<antd.Divider style={{ marginTop: 20, marginBottom: 20 }} />
 
 							<div style={{ textAlign: "center" }}>
-								{ this.state.loading && !this.state.visible && <antd.Button shape="circle" loading /> }
+								{this.state.loading && !this.state.visible && <antd.Button shape="circle" loading />}
 							</div>
-
 
 							{
 								this.state.visible && (
