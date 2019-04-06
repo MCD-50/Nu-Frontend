@@ -16,13 +16,18 @@ const propTypes = {
 //from app
 class GrantComponent extends Component {
 	constructor(params) {
+
 		super(params);
 		this.state = {
-			loading: false
+			loading: false,
+			capsuleId:""
 		}
 
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleResponse = this.handleResponse.bind(this);
+	}
+	componentDidMount() {
+
 	}
 
 	handleSubmit(e) {
@@ -47,7 +52,7 @@ class GrantComponent extends Component {
 
 	render() {
 		const { getFieldDecorator } = this.props.form;
-
+		console.log(this.props.match.params.capsuleId);
 		return (
 			<div className="wrapper">
 				<div style={{ margin: "0 auto", width: 400 }}>
@@ -58,7 +63,7 @@ class GrantComponent extends Component {
 							<antd.Form onSubmit={this.handleSubmit}>
 								<antd.Form.Item style={{ width: 350 }}>
 									{getFieldDecorator('walletAddress', {
-										initialValue: "",
+										initialValue:"",
 										rules: [{ required: true, message: 'Please input your account address' }],
 									})(
 										<antd.Input prefix={""} placeholder="Account Address" />
@@ -79,10 +84,10 @@ class GrantComponent extends Component {
 								<div style={{ display: "flex", flex: 1, flexDirection: "column", width: 350 }}>
 									<antd.Form.Item style={{ width: 350 }}>
 										{getFieldDecorator('capsuleId', {
-											initialValue: "",
+											initialValue: this.props.match.params.capsuleId,
 											rules: [{ required: true, message: 'Please input document capsule id' }],
 										})(
-											<antd.Input prefix={""} placeholder="Saliva Id" />
+											<antd.Input prefix={""}  placeholder="Saliva Id" />
 										)}
 									</antd.Form.Item>
 								</div>

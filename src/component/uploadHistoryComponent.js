@@ -8,6 +8,7 @@ import * as constant from "../helper/constant"
 
 //from antd
 import antd from "antd";
+import QRCode from 'qrcode.react';
 
 const propTypes = {
 	allUpload: PropTypes.array.isRequired,
@@ -19,12 +20,14 @@ class UploadHistoryComponent extends Component {
 		super(params);
 		this.state = {
 			loading: true,
+			visibleQrcodeModel: false
 		}
 
 		this.fetchItem = this.fetchItem.bind(this);
 		this.handleResponse = this.handleResponse.bind(this);
 		this.replicateData = this.replicateData.bind(this);
 		this.getUploadColumns = this.getUploadColumns.bind(this);
+		this.showQrCodeModal = this.showQrCodeModal.bind(this);
 	}
 
 	componentDidMount() {
@@ -53,13 +56,35 @@ class UploadHistoryComponent extends Component {
 	}
 
 	getUploadColumns() {
-		return ["accountAddress", "detail", "capsuleId", "transactionHash",].map(key => {
+		let columns=["accountAddress", "detail", "capsuleId", "transactionHash"].map(key => {
 			return {
 				title: key == "capsuleId" ? "salivaId" : key,
 				dataIndex: key,
 				key: key,
 				render: (text, record) => <p>{text} </p>
 			};
+		});
+	return columns;
+
+	}
+
+	showQrCodeModal() {
+		this.setState({
+			visibleQrcodeModel: true,
+		});
+	}
+
+	handleQrCodeOk (e) {
+		console.log(e);
+		this.setState({
+			visibleQrcodeModel: false,
+		});
+	}
+
+	handleQrCodeCancel (e){
+		console.log(e);
+		this.setState({
+			visibleQrcodeModel: false,
 		});
 	}
 
@@ -85,6 +110,11 @@ class UploadHistoryComponent extends Component {
 							dataSource={data}
 							loading={loading}
 							columns={columns}
+							expandedRowRender={record => <p style={{ margin: 0 }}><h2>Request access by scanning Qr code </h2>
+															<QRCode value={window.location.href+'/request/'+record.capsuleId} />
+								<p><antd.Button style={{ marginTop: 10 }} onClick={() => this.props.history.push('/request/'+record.capsuleId)}>Request access</antd.Button></p>
+
+							</p>}
 						/>
 					</antd.Card>
 				</div>

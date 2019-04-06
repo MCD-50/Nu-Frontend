@@ -2,43 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0703f94-8528-4dd6-b14f-dd543c86c2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Nu-Frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Nu-Frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/accountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/accountComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/decodeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/decodeComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/grantComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/grantComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/grantHistoryComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/grantHistoryComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/landingComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/landingComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/notFoundComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/notFoundComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/uploadComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/uploadComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/uploadHistoryComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/uploadHistoryComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/accountContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/accountContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/appContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/appContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/decodeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/decodeContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/grantContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/grantContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/grantHistoryContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/grantHistoryContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/uploadContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/uploadContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/uploadHistoryContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/uploadHistoryContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/constant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/internet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/internet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partialComponent/footerPartialComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/partialComponent/footerPartialComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partialComponent/headerPartialComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/partialComponent/headerPartialComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/route/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/action/appAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/action/appAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer/appReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticServer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/css/landing.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/" />
@@ -50,19 +22,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/staticServer.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/appContainer.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/route/route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-end-line="11" />
+            <state relative-caret-position="465">
+              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/grantContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/uploadHistoryComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="116" column="33" lean-forward="true" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+              <folding>
+                <element signature="e#206#230#0" expanded="true" />
+                <element signature="n#!!block;n#replicateData#0;n#UploadHistoryComponent#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/grantComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>queryString</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/route/route.js" />
+        <option value="$PROJECT_DIR$/src/component/grantComponent.js" />
+        <option value="$PROJECT_DIR$/src/component/uploadHistoryComponent.js" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
@@ -88,6 +110,24 @@
               <item name="Nu-Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Nu-Frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nu-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nu-Frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nu-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nu-Frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nu-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="route" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -96,6 +136,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
   </component>
   <component name="RunDashboard">
@@ -110,6 +152,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="uploadHistoryComponent.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/component/uploadHistoryComponent.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.uploadHistoryComponent.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,22 +175,26 @@
       <workItem from="1554353583005" duration="148000" />
       <workItem from="1554354083744" duration="232000" />
       <workItem from="1554356131567" duration="50000" />
+      <workItem from="1554358264196" duration="637000" />
+      <workItem from="1554531561625" duration="6826000" />
+      <workItem from="1554538655678" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430000" />
+    <option name="totallyTimeSpent" value="8493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -146,7 +202,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32792208" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32736155" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -159,7 +215,62 @@
     <entry file="file://$PROJECT_DIR$/staticServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/css/landing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/grantHistoryContainer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/partialComponent/headerPartialComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/appContainer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/route/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/grantContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/grantComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/uploadHistoryComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="116" column="33" lean-forward="true" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+          <folding>
+            <element signature="e#206#230#0" expanded="true" />
+            <element signature="n#!!block;n#replicateData#0;n#UploadHistoryComponent#0" />
+          </folding>
         </state>
       </provider>
     </entry>

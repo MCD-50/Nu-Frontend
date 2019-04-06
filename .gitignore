@@ -4,5 +4,6 @@ dist/
 npm-debug.log
 yarn-error.log
 .vscode/
+.idea/
 configFrontend.js
 bundle.js

@@ -38,7 +38,7 @@ export default (
 
 				<Route exact path="/account" component={AccountContainer} />
 				<Route exact path="/upload" component={UploadContainer} />
-				<Route exact path="/request" component={GrantContainer} />
+				<Route exact path="/request/:capsuleId?" component={GrantContainer} />
 				<Route exact path="/decode" component={DecodeContainer} />
 				<Route exact path="/grantHistory" component={GrantHistoryContainer} />
 				<Route exact path="/uploadHistory" component={UploadHistoryContainer} />
