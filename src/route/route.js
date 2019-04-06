@@ -27,6 +27,7 @@ import UploadHistoryContainer from "../container/uploadHistoryContainer";
 // other pages
 import NotFoundComponent from '../component/notFoundComponent';
 import LandingComponent from "../component/landingComponent";
+import AboutComponent from "../component/aboutComponent";
 
 /* components */
 export default (
@@ -43,6 +44,7 @@ export default (
 				<Route exact path="/grantHistory" component={GrantHistoryContainer} />
 				<Route exact path="/uploadHistory" component={UploadHistoryContainer} />
 
+				<Route exact path="/about" component={AboutComponent} />
 				<Route path="*" component={NotFoundComponent} />
 			</Switch>
 		</AppContainer>

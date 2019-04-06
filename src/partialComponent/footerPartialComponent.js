@@ -52,7 +52,7 @@ class FooterPartialComponent extends Component {
 
 				<div className="footer-container-center">
 					<p style={{ color: "#7d8694", fontSize: 9 }}>
-						Genobank is decentralized anonymous DNA management
+						To empower the world to upload FDA approved Saliva DNA extraction information on blockchain, stored on IPFS to enable an anonymous and encrypted way powered by NuChyper to interact with the World’s Genomic ecosystem with privacy & control.
 					</p>
 				</div>
 			</div>
