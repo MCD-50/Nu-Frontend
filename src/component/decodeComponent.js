@@ -78,7 +78,7 @@ class DecodeComponent extends Component {
 								this.state.visible && (
 									<div>
 										<antd.Timeline>
-											<antd.Timeline.Item>DNA file url : <b>{this.state.decryptedData}</b></antd.Timeline.Item>
+											<antd.Timeline.Item>DNA file url (IPFS file usually take 30 mins to appear) : <b>{this.state.decryptedData}</b></antd.Timeline.Item>
 										</antd.Timeline>
 									</div>
 								)
